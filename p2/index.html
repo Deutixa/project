@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "stylemains.css">
+    <link rel="stylesheet" media = "screen and (max-width: 1000px)" href="tablets.css">
+    <link rel="stylesheet" media = "screen and (max-width: 530px)" href="mobiles.css">
+</head>
+
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="container flex">
+            <div id="random"></div>
+            <ul>
+                <li><a href = "#">Acasa</a></li>
+                <li><a href = "#aboutme">Despre mine</a></li> 
+                <li><a href = "#Photography">Călătorii-fotografii</a></li>
+                <li><a href = "#Videography">Videoclipuri</a></li>
+                <li><a href="./CV/CV.html">CV</a></li><li><a href="./contactme.html" class="btn3">Formular contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="home">
+        <div id = 'test'></div>
+        <div id="main">
+            <h1 id="mainheadings">Calatorii personale</h1>
+
+            <button class="btn" id = "btn" onclick = "window.location.href = 'contactme.html'">
+                Contact
+ <a href="https://www.facebook.com/profile.php?id=100088152673803" class="btn" id="btn">
+            Facebook </a>
+            </button>
+
+        </div>
+    </section>
+
+
+    <section id="aboutme">
+        <h1 id="subheadings">DESPRE MINE</h1>
+            <div id="intro">
+                <h2> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                <p><font size = '4'>
+Salut! Sunt Andreea Popescu, studenta in anul 3 la Universitatea Petrol-Gaze din Ploiesti, la Facultatea de Stiinte Economice, specializarea Informatica Economica. Recent, am descoperit ca imi place mult sa fotografiez, chiar daca sunt la inceput.
+Aici, pe site-ul meu, va arat cateva poze pe care le-am facut. Sunt in cautarea frumusetii in lucrurile simple din jurul meu si incerc sa invat mai mult despre fotografiere pe parcurs. Va invit sa aruncati o privire si sa vedeti lumea prin ochii mei. Printre locurile in care am capturat aceste momente se numara: Moieciu, Muntele Ranca, Maneciu, Olimp, Vulcanii Noroiosi, Barajul Siriu, Dealuri Cepturene, Urdari (judetul Gorj).
+Va multumesc ca sunteti alaturi de mine în aceasta calatorie!
+
+
+
+            </div>
+        </div>        
+    </section>
+
+ <section id="Photography">
+        <h1 id="subheadings2">Fotografii</h1>
+        <button type = 'button' id = "btn2" onclick = "window.location.href = 'Photogallery.html'">
+            <font size = '4'>Vezi galeria</font>
+        </button>
+        <div class="gallery">
+ <p>Acum, vă deschid ușile spre o conversație mai profundă și interactivă!
+Dacă împărtășiți aceeași pasiune pentru călătorii sau aveți experiențe și idei extraordinare, vă încurajez să vă implicați. Suntem aici să discutăm despre destinații de neuitat, să schimbăm povești de aventuri și să visăm împreună la următoarele călătorii remarcabile.
+Vă mulțumesc sincer că vă alăturați acestei comunități! Haideți să transformăm acest loc într-un spațiu plin de energie pozitivă și inspirație!🙋🏻‍♀️
+<p><font size = '4'>
+          
+        </div>
+    </section>
+
+<section id="Videography">
+    <h1 id="subheadings3">
+Videoclip captivant - vizionati acum!🏞️</h1>
+    <div style="text-align:center"> 
+<h2> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZQAaM33XUGs" frameborder="0" allowfullscreen></iframe>
+    </div> 
+
+    <script> 
+        var myVideo = document.querySelector("iframe"); 
+
+        function playPause() { 
+            if (myVideo) {
+                var iframeSrc = myVideo.src;
+                if (iframeSrc.includes("autoplay=1")) {
+                    myVideo.src = iframeSrc.replace("autoplay=1", "autoplay=0");
+                } else {
+                    myVideo.src = iframeSrc + "&autoplay=1";
+                }
+            }
+        } 
+
+        function makeBig() { 
+            if (myVideo) {
+                myVideo.width = 800; 
+            }
+        } 
+
+        function makeSmall() { 
+            if (myVideo) {
+                myVideo.width = 320; 
+            }
+        } 
+
+        function makeNormal() { 
+            if (myVideo) {
+                myVideo.width = 560; 
+            }
+        } 
+    </script>
+</section>
+
+
+
+<p> <a href="https://www.youtube.com/watch?v=0AklkPUiAR4">Un mic bonus-->✨De ce sa calatoresti in Romania✨</a>.</p>
+
+
+
+    <script src = "main.js"></script>
+
+    
+
+</body>
+</html>

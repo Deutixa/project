@@ -1,0 +1,63 @@
+#home{
+    height: 760px;
+}
+
+.spotify{
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic{
+    flex-direction: column;
+    align-items: center;
+}
+
+.pic img{
+    width: 445px;
+    height: 300px;
+}
+
+.youtube{
+    flex-direction: column;
+    align-items: center;
+}
+
+.youtube img {
+    width: 445px;
+    height: 300px;
+}
+
+.gallery img{
+    width: 200px;
+    height: 300px;
+}
+
+#mainheadings{
+    font-size: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+#subheadings{
+    transform: translateX(-650px);
+    width: 1000px;
+}
+
+#subheadings2{
+    transform: translateX(-900px);
+    width: 1000px;
+}
+
+#subheadings3{
+    transform: translateX(-800px);
+    width: 1000px;
+}
+
+#subheadings4{
+    transform: translateX(-1100px);
+    width: 1000px;
+    z-index: 100;
+}
